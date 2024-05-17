@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Pal is an AI focused on helping in few simple tasks, answering questions within it's capabilities and executing friendly response in few questions. It was developed by PasQal Intel in 2023. It has been running, advancing and improving ever since...">
+    <meta name="keywords" content="Pal, AI, tasks, AI pal, buddy, Friend, Answering questions, performing tasks.">
+    <meta name="Author" content="PasQal Intel; copyright of Paschal Ngaoka">
+    <title>Pal | Chat</title>
+    <link rel="stylesheet" href="ui.css">
+    <script src="ui.js"></script>
+</head>
+<body id="body" name="body">
+    <div id="header">
+        <header draggable="true">PAL</header>
+
+        <a class="user_img" href="./open.html">
+            <img src="../COMMERCIAL/images/dark.jpg" alt="The user's Photo/Image." id="img">
+        </a>
+        
+        <button id="theme" onclick="theme()">
+            <svg width="16" height="16" fill="currentColor" class="bi-moon-fill" viewBox="0 0 16 16" id="moon">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+          </svg>
+        </button>
+
+    </div>
+
+    <div id="chat_window">
+    </div>
+
+    <div id="down">
+        <div class="input_section">
+            <div class="form">
+                <button type="reset" class="reset" onclick="reset() " ondblclick="reset()" >RESET</button>
+
+                <input type="text" id="input" name="input">
+
+                <button type="button" id="ask" onclick="respond()">ASK</button>
+
+            </div>
+
+            <footer>
+                <p>PasQal Intel &copy; 2023</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
